@@ -7,5 +7,4 @@ before_install:
     - docker build -t atisha/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run script:
-        - docker run -e CI=true atisha/docker-react npm run test 
+    - docker run -e CI=true atisha/docker-react npm run test 
